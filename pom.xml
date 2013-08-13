@@ -21,6 +21,11 @@
 		<junit.version>4.9</junit.version>
 	</properties>
 
+	<scm>
+		<url>https://github.com/uoa-group-applications/composite-unittest</url>
+		<connection>scm:git:https://github.com/uoa-group-applications/composite-unittest.git</connection>
+		<developerConnection>scm:git:git@github.com:uoa-group-applications/composite-unittest.git</developerConnection>
+	</scm>
 
 	<dependencies>
 	
@@ -50,10 +55,4 @@
 	
 	</dependencies>
 	
-	<scm>
-		<url>https://github.com/uoa-group-applications/composite-unittest</url>
-		<connection>scm:git:https://github.com/uoa-group-applications/composite-unittest.git</connection>
-		<developerConnection>scm:git:git@github.com:uoa-group-applications/composite-unittest.git</developerConnection>
-	</scm>
-
 </project>

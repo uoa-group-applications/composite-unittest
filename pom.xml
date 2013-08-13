@@ -1,44 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+	<modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>nz.ac.auckland.groupapps.parent</groupId>
+	<parent>
+		<groupId>nz.ac.auckland.groupapps.parent</groupId>
 		<artifactId>parent-groupapps-central</artifactId>
 		<version>1.1</version>
-    </parent>
+	</parent>
 
-    <groupId>nz.ac.auckland.composite</groupId>
+	<groupId>nz.ac.auckland.composite</groupId>
 
-    <artifactId>composite-unittest</artifactId>
-    <version>2.3-SNAPSHOT</version>
-    <packaging>jar</packaging>
-    <name>composite-unittest</name>
+	<artifactId>composite-unittest</artifactId>
+	<version>2.3-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>composite-unittest</name>
 
-    <description>Unit testing infrastructure</description>
+	<description>Unit testing infrastructure</description>
+	
+	<properties>
+		<junit.version>4.9</junit.version>
+	</properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>[1.9.5]</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>[4.9]</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-dep</artifactId>
-            <version>[4.9]</version>
-        </dependency>
-        <dependency>
-            <groupId>org.easytesting</groupId>
-            <artifactId>fest-assert</artifactId>
-            <version>[1.4]</version>
-        </dependency>
-    </dependencies>
+
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>[1.9.5]</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>[${junit.version}]</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit-dep</artifactId>
+			<version>[${junit.version}]</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.easytesting</groupId>
+			<artifactId>fest-assert</artifactId>
+			<version>[1.4]</version>
+		</dependency>
+	
+	</dependencies>
 	
 	<scm>
 		<url>https://github.com/uoa-group-applications/composite-unittest</url>
